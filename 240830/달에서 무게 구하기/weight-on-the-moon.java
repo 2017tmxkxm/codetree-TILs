@@ -5,6 +5,5 @@ public class Main {
         double c = a*b;
 
         System.out.printf("%d * %.6f = %.6f", a, b, c);
-        13 * 0.165000 = 2.145000
     }
 }
