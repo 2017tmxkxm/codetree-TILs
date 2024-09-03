@@ -6,7 +6,7 @@ public class Main {
         int b = sc.nextInt();
 
         if(a>b) System.out.println(a*b);
-        else System.out.println(b%a);
+        else System.out.println(b/a);
         
     }
 }
