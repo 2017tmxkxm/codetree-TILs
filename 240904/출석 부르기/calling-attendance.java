@@ -6,6 +6,7 @@ public class Main {
 
         if(a == 1) System.out.println("John");
         else if(a == 2) System.out.println("Tom");
-        else System.out.println("Paul");
+        else if(a ==3)System.out.println("Paul");
+        else System.out.println("Vacancy");
     }
 }
