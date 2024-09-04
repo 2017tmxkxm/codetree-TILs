@@ -9,7 +9,7 @@ public class Main {
         int bA = sc.nextInt();
         int bG = sc.next().charAt(0);
 
-        if((19<=aA || 19<=bA) &&(aG=='M' || bG == 'M')) {
+        if((19<=aA && aG == 'M') || (19<=bA && bG == 'M')) {
             System.out.println(1);
         } else {
             System.out.println(0);
