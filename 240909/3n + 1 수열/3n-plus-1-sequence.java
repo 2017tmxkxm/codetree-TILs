@@ -7,6 +7,11 @@ public class Main {
 
         int cnt = 0;
         while(true) {
+            if(n==1) {
+                System.out.println(cnt);
+                break;
+            }
+
             if(n%2==0) {
                 n/=2;
             }else {
@@ -16,10 +21,6 @@ public class Main {
 
             cnt++;
 
-            if(n==1) {
-                System.out.println(cnt);
-                break;
-            }
         }
     }
 }
