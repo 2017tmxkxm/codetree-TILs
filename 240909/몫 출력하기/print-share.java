@@ -4,13 +4,22 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        for(int i=0; i<=3; i++) {
-            int a = sc.nextInt();
+        int cnt = 0;
 
-            if(a%2!=0 && a%3==0) {
+        while(true) {
+            int n = sc.nextInt();
+
+            cnt++;
+            if(n%2!=0 && n%3==0) {
                 continue;
-            }else {
-                System.out.println(a/2);
+            }
+
+            if(n%2==0) {
+                System.out.println(n/2);
+            }
+
+            if(cnt ==3) {
+                break;
             }
         }
     }
