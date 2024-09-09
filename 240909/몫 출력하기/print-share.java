@@ -9,13 +9,14 @@ public class Main {
         while(true) {
             int n = sc.nextInt();
 
-            cnt++;
+
             if(n%2!=0 && n%3==0) {
                 continue;
             }
 
             if(n%2==0) {
                 System.out.println(n/2);
+                cnt++;
             }
 
             if(cnt ==3) {
