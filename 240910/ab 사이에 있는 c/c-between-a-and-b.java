@@ -6,17 +6,15 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        
-        int cnt = 0;
+
+        boolean result = false;
         for(int i=a; i<=b; i++) {
             if(i%c==0) {
-                System.out.println("YES");
-                break;
-            } else {
-                cnt++;
+                result = true;
             }
         }
-        
-        if(cnt!=0) System.out.println("NO");
+
+        if(result) System.out.println("YES");
+        else System.out.println("NO");
     }
 }
