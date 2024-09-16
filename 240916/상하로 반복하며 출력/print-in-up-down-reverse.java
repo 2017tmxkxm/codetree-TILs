@@ -5,17 +5,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int cnt = n;
 
-        for(int i = 1; i <= n; i++){
-            for(int j = n; j > 0; j--){
-                if(j%2 == 0){
-                    System.out.print(i);
-                }else{
-                    System.out.print(cnt);
-                }
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<n; j++) {
+                if(j%2==0) System.out.print(i+1);
+                else System.out.print(n-i);
             }
-            cnt--;
             System.out.println();
         }
     }
