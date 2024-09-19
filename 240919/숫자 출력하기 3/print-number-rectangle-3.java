@@ -10,7 +10,7 @@ public class Main {
             int temp = 0;
             for(int j=0; j<m; j++) {
                 System.out.print(temp + i + " ");
-                temp += 4;
+                temp += n;
             }
             System.out.println();
         }
