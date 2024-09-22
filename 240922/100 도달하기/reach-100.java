@@ -6,7 +6,7 @@ public class Main {
 
         int n = sc.nextInt();
 
-        int[] arr = new int[10];
+        int[] arr = new int[100];
 
         int cnt = 0;
 
