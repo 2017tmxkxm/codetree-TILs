@@ -34,7 +34,7 @@ public class Main {
             }
         }
 
-        if(answer) {
+        if(answer && B.length < A.length) {
             System.out.println("Yes");
         }else{
             System.out.println("No");
