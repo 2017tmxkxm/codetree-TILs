@@ -6,6 +6,7 @@ public class Main {
 
         int n = sc.nextInt();
         int[] arr = new int[n + 1];
+        int temp = n;
 
         for(int i=1; i<n+1; i++) {
             arr[i] = sc.nextInt();
@@ -22,8 +23,10 @@ public class Main {
             }
             System.out.print(index + " ");
             n = index-1;
+            i = 1;
             if(n==1) {
                 System.out.print(1);
+                break;
             }
         }
 
