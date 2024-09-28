@@ -12,15 +12,7 @@ public class Main {
         for(int i=0; i<m; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
-            arr[a-1][b-1] = 1;
-        }
-
-        for(int i=0; i<n; i++) {
-            for(int j=0; j<n; j++) {
-                if(arr[i][j] == 1) {
-                   arr[i][j] = count++;
-                }
-            }
+            arr[a-1][b-1] = i+1;
         }
 
         for(int i=0; i<n; i++) {
@@ -29,6 +21,5 @@ public class Main {
             }
             System.out.println();
         }
-
     }
 }
