@@ -4,6 +4,7 @@ public class Main {
 
     final static int[] dx = new int[] {1, 0, -1, 0};
     final static int[] dy = new int[] {0, -1, 0 ,1};
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
@@ -13,11 +14,8 @@ public class Main {
         int x = 0;
         int y = 0;
 
-        int nx = 0;
-        int ny = 0;
-
         for(int i=0; i<str.length(); i++) {
-            if(str.charAt(i) == 'E' ) {
+            if(str.charAt(i) == 'R' ) {
                 // 시계 방향
                 dirNum = (dirNum +1) % 4;
             } else if (str.charAt(i) == 'L') {
@@ -25,11 +23,11 @@ public class Main {
                 dirNum = (dirNum-1+4) % 4;
             } else {
                 // F가 주어질 때 이동
-                nx += x+dx[dirNum];
-                ny += y+dy[dirNum];
+                x += dx[dirNum];
+                y += dy[dirNum];
             }
         }
 
-        System.out.println(nx + " " + ny);
+        System.out.println(x + " " + y);
     }
 }
