@@ -9,20 +9,20 @@ public class Main {
 
         int inputLen = inputStr.length();
         int targetLen = targetStr.length();
-        int count = 0;
-        boolean exist = false;
+        int result = 0;
 
         for(int i = 0; i < inputLen; i++) {
+            int count = 0;
             for(int j=0; j<targetLen; j++) {
-                if(inputStr.charAt(i+j) != targetStr.charAt(j)){
+                if(inputStr.charAt(i+j) != targetStr.charAt(j)) {
                     break;
                 }
-                exist = true;
                 count++;
             }
+            if(count == targetLen) result++;
 
         }
 
-        System.out.println(count/targetLen);
+        System.out.println(result);
     }
 }
