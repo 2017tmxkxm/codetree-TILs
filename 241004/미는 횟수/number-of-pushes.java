@@ -10,13 +10,18 @@ public class Main {
         int cnt = 0;
 
         while(true) {
-            A = A.substring(A.length()-1) + A.substring(0, A.length()-1);
-            cnt++;
+            if(cnt < A.length()) {
+                A = A.substring(A.length()-1) + A.substring(0, A.length()-1);
+                cnt++;
+            } else {
+                System.out.println(-1);
+                break;
+            }
+
             if(A.equals(B)) {
+                System.out.println(cnt);
                 break;
             }
         }
-
-        System.out.println(cnt);
     }
 }
