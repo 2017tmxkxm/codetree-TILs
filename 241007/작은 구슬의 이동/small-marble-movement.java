@@ -8,11 +8,11 @@ public class Main {
 
     // 초기 구슬의 이동 방향
     static int getDir(char d) {
-        if(c == 'R') {
+        if(d == 'R') {
             return 0;
-        } else if (c == 'D') {
+        } else if (d == 'D') {
             return 1;
-        } else if (c == 'U') {
+        } else if (d == 'U') {
             return 2;
         } else {
             return 3;
@@ -36,14 +36,20 @@ public class Main {
         int moveDir = getDir(d);
 
         for(int i=0; i<t; i++) {
-            r += dx[moveDir];
-            c += dy[moveDir];
 
-            // 범위를 벗어난다면 방향 전환
-            if(!inRange(r, c)) {
+            int nx = r + dx[moveDir];
+            int ny = c + dy[moveDir];
+
+            // 범위 안에 들어오면, 그 때 r과 c에 현재 위치 대입 및 그대로 진행
+            if(inRange(nx,ny)) {
+                r = nx;
+                c = ny;
+                // 범위 안에 들어오지 못하면, 방향을 전환
+            } else {
                 moveDir = 3 - moveDir;
-                i--;
             }
+
+           
         }
 
         System.out.println(r + " " + c);
