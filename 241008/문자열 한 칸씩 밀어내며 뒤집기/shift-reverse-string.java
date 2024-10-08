@@ -15,11 +15,11 @@ public class Main {
                 str = str.substring(str.length()-1) + str.substring(0, str.length()-1);
                 System.out.println(str);
             } else {
-                String temp = "";
+                StringBuilder temp = new StringBuilder();
                 for(int j=str.length()-1; j>=0; j--) {
-                    temp += str.charAt(j);
+                    temp.append(str.charAt(j));
                 }
-                str = temp;
+                str = temp.toString();
                 System.out.println(str);
             }
         }
